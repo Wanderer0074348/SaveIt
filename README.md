@@ -27,7 +27,7 @@ A modern bookmark manager that uses AI to automatically summarize, categorize, a
    
    Add your MongoDB Atlas connection string to `.env`:
    ```
-   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/saveit_db?retryWrites=true&w=majority
+   MONGODB_URI= your_key
    ```
 
 3. **Start the application:**
