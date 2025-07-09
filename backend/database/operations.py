@@ -7,9 +7,8 @@ from typing import List, Optional
 class LinkOperations:
     @staticmethod
     async def create_link(link_data: LinkModel) -> str:
-        # Convert the model to dict and handle HttpUrl conversion
         link_dict = link_data.dict()
-        link_dict["url"] = str(link_dict["url"])  # Convert HttpUrl to string
+        link_dict["url"] = str(link_dict["url"])
         
         result = await collections.links.insert_one(link_dict)
         return str(result.inserted_id)
